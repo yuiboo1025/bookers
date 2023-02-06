@@ -1,0 +1,29 @@
+<h1>
+  <strong>Books</strong>
+</h1>
+
+<%=@books.each do |list| %>
+
+<div class="index">
+  <table>
+    <thead>
+      <tr>
+        <th>title</th>
+        <th>body</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th><%=f.text_field:title %></th>
+        <th><%=f.text_field:body %></th>
+        <th><%=link_to"Show",'/books/show'%></th>
+        <th><%=link_to"Edit",'/books/edit'%></th>
+        <!--destroyの移動は後からやる-->
+        <th><%=link_to"Destroy",'/books/show'%></th>
+      </tr>
+    </tbody>
+ </table>
+
+</div>
+
