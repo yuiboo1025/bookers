@@ -6,7 +6,6 @@ class BooksController < ApplicationController
   def create
     book=Book.new(book_params)
     book.save
-    #リダイアル先showであってる？＃
     redirect_to book_path(book.id)
   end
 
