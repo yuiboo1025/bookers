@@ -10,3 +10,18 @@ h1{
   font-size:2em;
   font-weight:bold;
 }
+
+.title-box{
+  display: flex;
+  margin:33px;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+.body-box{
+  display: flex;
+  margin:33px;
+  line-height: 18px;
+  font-size: 13px;
+}
+
